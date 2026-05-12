@@ -17,7 +17,7 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
-# Puerto según el MS (cambiar en cada uno)
-EXPOSE 8081
+
+EXPOSE 8083
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
